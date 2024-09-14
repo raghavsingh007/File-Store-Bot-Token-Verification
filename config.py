@@ -3,29 +3,29 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("7244338953:AAF33VTSip5DTzCWnHOIbj83sR_Dv023Miw")
-APP_ID = int(os.environ.get("22919278"))
-API_HASH = os.environ.get("bbb5181ff84afda38fd32e15267a93df", "")
-CHANNEL_ID = int(os.environ.get("1260662114", ""))
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7244338953:AAF33VTSip5DTzCWnHOIbj83sR_Dv023Miw")
+APP_ID = int(os.environ.get("APP_ID", "22919278"))
+API_HASH = os.environ.get("API_HASH", "bbb5181ff84afda38fd32e15267a93df")
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002227700707"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("1260662114", ""))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1260662114"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("mongodb+srv://saamajsewak:<db_password>@cluster0.x8kpm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", "")
-DB_NAME = os.environ.get("saamajsewak", "codeflix_bots")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://saamajsewak:<db_password>@cluster0.x8kpm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = os.environ.get("DATABASE_NAME", "codeflix_bots")
 
 #Shortner (token system) 
 
-SHORTLINK_URL = os.environ.get("https://publicearn.com/",)
-SHORTLINK_API = os.environ.get("c2a466a2ebca5062fd58cc595cda0bc21ccb6f2a")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "https://publicearn.com/")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "c2a466a2ebca5062fd58cc595cda0bc21ccb6f2a")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 600)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
-TUT_VID = os.environ.get("https://t.me/saamajsewak/32", "https://t.me/How_to_Download_7x/35") 
+TUT_VID = os.environ.get("TUT_VID", "https://t.me/saamajsewak/32") 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("https://t.me/saamajsewak", ""))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002227700707"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
